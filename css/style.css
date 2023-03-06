@@ -1,4 +1,163 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
 /***** TAG SELECTOR *****/
+body {
+    margin: 0;
+    font-family: HankenGrotesk;
+}
 
 /***** CLASS SELECTOR *****/
+.main {
+    width: 1905px;
+    height: 944px;
+    background-color: rgb(166, 167, 167);
+    display: flex;
+}
 
+.card-main {
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+}
+
+.card-left {
+    width: 400px;
+    height: 600px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-left h3{
+    color: hsl(241, 100%, 89%);
+    letter-spacing: 0.5px;
+    margin-top: 60px;
+}
+
+.card-left h4{
+    margin: 10px 60px 60px 60px;
+    color:hsl(241, 100%, 89%);
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+}
+
+.circle h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+.circle h5 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    color: #897DFF;
+    letter-spacing: 0.5px;
+}
+
+.card-left-title h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.card-left-text h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.card-left-text h4 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.card-right {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-right h2 {
+    /*margin-left: 40px;*/
+    margin-top: 35px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 550;
+}
+
+.result {
+    width: 400px;
+    height: 350px;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-box {
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.result-box img {
+    display: inline-block;
+}
+
+.result-box h6 {
+    font-size: 12px;
+}
+
+.box-red {
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.box-yellow {
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.box-teal {
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.box-cobalt {
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    justify-content: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
