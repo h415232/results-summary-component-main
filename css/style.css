@@ -13,7 +13,7 @@ body {
 .main {
     width: 1905px;
     height: 944px;
-    background-color: rgb(166, 167, 167);
+    /*background-color: rgb(166, 167, 167);*/
     display: flex;
 }
 
@@ -24,6 +24,8 @@ body {
     margin: auto;
     border-radius: 20px;
     display: flex;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.1));
 }
 
 .card-left {
@@ -102,17 +104,17 @@ body {
 }
 
 .card-right h2 {
-    /*margin-left: 40px;*/
     margin-top: 35px;
     font-size: 26px;
     letter-spacing: 1px;
     font-weight: 550;
+    margin-right: 182px;
+    margin-bottom: 30px;
 }
 
 .result {
     width: 400px;
     height: 350px;
-    /*background-color: aqua;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,27 +132,80 @@ body {
 
 .result-box img {
     display: inline-block;
+    scale: 120%;
+    margin-left: 20px;
 }
 
 .result-box h6 {
-    font-size: 12px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 550;
+}
+
+.component {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.score {
+    width: 100px;
+    height: 70px;
+}
+
+.score h6 {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.main-score {
+    color: black;
+}
+
+.sub-score {
+    color: gray;
 }
 
 .box-red {
-    background-color: hsla(0, 100%, 67%, 0.2);
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
 }
 
 .box-yellow {
-    background-color: hsla(39, 100%, 56%, 0.2);
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
 }
 
 .box-teal {
-    background-color: hsla(166, 100%, 37%, 0.2);
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%)
 }
 
 .box-cobalt {
-    background-color: hsla(234, 85%, 45%, 0.2);
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
 }
+
+.btn {
+    border-radius: 28px;
+    color: white;
+    font-size: 18px;
+    background: #303B59;
+    padding: 17px 110px;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: 450;
+    letter-spacing: 1px;
+}
+  
+.btn:hover {
+    background: #50748a;
+    text-decoration: none;
+}
+
 
 .attribution { 
     font-size: 11px; 
