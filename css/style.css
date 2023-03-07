@@ -13,7 +13,6 @@ body {
 .main {
     width: 1905px;
     height: 944px;
-    /*background-color: rgb(166, 167, 167);*/
     display: flex;
 }
 
